@@ -7,6 +7,8 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('now-list');
+  this.route('upcoming-list');
 });
 
 export default Router;

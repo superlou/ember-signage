@@ -1,0 +1,6 @@
+<h1>Happening Now</h1>
+<ul class="event-list">
+  {{#each model as |event|}}
+    {{event-list-item time=event.time name=event.name location=event.location}}
+  {{/each}}
+</ul>
