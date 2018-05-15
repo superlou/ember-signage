@@ -1,6 +1,2 @@
 <h1>Coming Up</h1>
-<ul class="event-list">
-  {{#each model as |event|}}
-    {{event-list-item time=event.time name=event.name location=event.location}}
-  {{/each}}
-</ul>
+{{paginated-event-list events=model pageLimit=6 transitionTo='now-list'}}
